@@ -18,6 +18,10 @@ var getName = function () {
   return name;
 };
 ```
+```ruby
+get_name = "what is your name?"
+puts get_name
+```
 
 ### Reverse It
 ```javascript
@@ -33,6 +37,11 @@ var reverseIt = function () {
   alert(reverse);
 };
 ```
+```ruby
+reverse_it = "a man, a plan, a canal, frenemies!".reverse
+puts reverse_it
+```
+
 ### Swap Em
 ```javascript
 var swapEm = function () {
@@ -47,6 +56,12 @@ var swapEm = function () {
   alert("a is now " + a + ", and b is now " + b);
 };
 ```
+```ruby
+a = 10
+b = 30
+a, b = b, a
+```
+
 ### Multiply Array
 ```javascript
 var multiplyArray = function (ary) {
@@ -62,7 +77,12 @@ var multiplyArray = function (ary) {
   return total;
 };
 ```
-
+```ruby
+array = ['1', '2', '3']
+total = 1
+multiply_array = array * total
+puts multiply_array
+```
 ### Array includes a value
 ``` javascript
 var searchArray = function(array,value) {
@@ -74,6 +94,10 @@ var searchArray = function(array,value) {
   }
   return -1;
 };
+```
+```ruby
+array = [1, 2, 3, 4, 5]
+puts array.include? 4
 ```
 ## Bonuses:
 
@@ -92,7 +116,15 @@ var nthFibonacciNumber = function () {
   alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
 };
 ```
-
+```ruby 
+n = 10
+def fibonacci(n)
+if n ==1
+1
+elseif n ==2
+1
+else fibonacci(n-1) + fibonacci(n-2)
+end
 ### Palindrome
 ``` javascript
 var isPalindrome = function(str) {
